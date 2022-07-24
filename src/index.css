@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  background-color: rgb(245,245,245);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+  padding: 0;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 50px;
+  color: rgb(231,219,218);
+  margin-bottom: 20px;
+}
+
+.todos_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  box-shadow: 2px 5px 6px 0px rgba(34, 60, 80, 0.2);
+}
+
+.todos_wrapper_item {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  word-wrap: break-word;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.todos_wrapper_item p{
+  font-size: 20px;
+  margin: 0;
+  margin-left: 60px;
+}
+.todos_wrapper_item label {
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  width: 28px;
+}
+.todos_wrapper_item label:after {
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 1;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.labelCheckedStyle{
+  border: 1px solid #66bb6a;
+}
+
+.labelNotCheckedStyle{
+  border: 1px solid #ccc;
+}
+
+.labelCheckedStyle::after{
+  border: 2px solid #66bb6a;
+}
+
+.labelNotCheckedStyle::after{
+  border: 2px solid #fff;
+}
+
+.todos_wrapper_item input[type="checkbox"] {
+  visibility: hidden;
+}
+
+
+.infoMenu button{
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.infoMenu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.2);
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+}
+
+.infoMenu{
+  padding: 0 20px 0 20px;
+}
+
+.crossedOutFont {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.addTodosItemInput{
+  border: none;
+}
+
+.todos_wrapper_item{
+  background-color: white;
+  width: 100%;
+  height: 50px;
+}
+
+.addTodosItem{
+  box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.2);
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.addTodosItem input {
+  height: 50%;
+  margin-left: 25px;
+  width: 100%;
+  outline: none;
+}
+
+.addTodosItem img{
+  margin-left: 15px;
+}
